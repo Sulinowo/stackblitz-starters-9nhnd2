@@ -1,7 +1,7 @@
 {
   "promotions": [
     {
-      "marketingName": "MarketingName1",
+      "marketingName": "MarketingName12",
       "technicalName": "TechnicalName1",
       "description": "",
       "portal": "portal",
@@ -14,8 +14,7 @@
       "id": 1693501311938
     },
     {
-      "id": 1693501344236,
-      "marketingName": "MarketingName2",
+      "marketingName": "MarketingName223",
       "technicalName": "TechnicalName3",
       "description": "Desc1",
       "portal": "portal",
@@ -23,8 +22,9 @@
       "startDate": "2023-08-13T22:00:00.000Z",
       "finishDate": "2023-08-27T22:00:00.000Z",
       "radioValue": "base",
-      "selectedConnectPromotionsCheckbox": false,
-      "selectedBackPromotionCheckbox": false
+      "selectedBackPromotionCheckbox": false,
+      "selectedConnectPromotionCheckbox": null,
+      "id": 1693501344236
     }
   ]
 }

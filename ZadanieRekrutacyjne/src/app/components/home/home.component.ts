@@ -42,13 +42,6 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  onPortalChange(event: any): void {
-    if (event && event.value) {
-      this.selectedPortalOption = event.value;
-      this.saveDraft('portal', this.selectedPortalOption);
-    }
-  }
-
   saveDraft(key: string, event: any): void {
     const value = event.target.value;
     localStorage.setItem(`${key}`, value);
@@ -122,6 +115,7 @@ export class HomeComponent implements OnInit {
   }
 
   saveFormData(): void {
+    this.loadDrafts();
     if (
       !this.draftData.marketingName ||
       !this.draftData.portal ||
