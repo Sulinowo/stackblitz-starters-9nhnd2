@@ -1,0 +1,19 @@
+.definition-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.definition-left-column {
+  border-right: 2px solid white;
+  height: 100vh;
+  padding-right: 1rem;
+}
+
+.definition-right-column {
+  border-right: 2px solid white;
+  padding-right: 10px;
+}

@@ -1,0 +1,86 @@
+<ul class="custom-list">
+  <li
+    class="list-item"
+    (click)="selectItem('DEFINITION')"
+    [ngClass]="{ selected: selectedItem === 'DEFINITION' }"
+  >
+    <span class="circle">1</span>
+    <span class="item-text">DEFINITION</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('CHOOSE PRODUCTS')"
+    [ngClass]="{ selected: selectedItem === 'CHOOSE PRODUCTS' }"
+  >
+    <span class="circle">2</span>
+    <span class="item-text">CHOOSE PRODUCTS</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('EXCLUDE PRODUCTS')"
+    [ngClass]="{ selected: selectedItem === 'EXCLUDE PRODUCTS' }"
+  >
+    <span class="circle">3</span>
+    <span class="item-text">EXCLUDE PRODUCTS</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="canSelectItem('BONUS PRODUCTS') && selectItem('BONUS PRODUCTS')"
+    [ngClass]="{
+      selected: selectedItem === 'BONUS PRODUCTS',
+      disabled: !canSelectItem('BONUS PRODUCTS')
+    }"
+  >
+    <span class="circle">4</span>
+    <span class="item-text">BONUS PRODUCTS</span>
+    <mat-icon matTooltip="Lorem ipsum..." matTooltipPosition="after"
+      >info</mat-icon
+    >
+  </li>
+  <li
+    class="list-item"
+    (click)="canSelectItem('PRODUCTS LIMITS') && selectItem('PRODUCTS LIMITS')"
+    [ngClass]="{
+      selected: selectedItem === 'PRODUCTS LIMITS',
+      disabled: !canSelectItem('BONUS PRODUCTS')
+    }"
+  >
+    <span class="circle">5</span>
+    <span class="item-text">PRODUCTS LIMITS</span>
+    <mat-icon matTooltip="Lorem ipsum..." matTooltipPosition="after"
+      >info</mat-icon
+    >
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('CHOOSE CLIENTS')"
+    [ngClass]="{ selected: selectedItem === 'CHOOSE CLIENTS' }"
+  >
+    <span class="circle">6</span>
+    <span class="item-text">CHOOSE CLIENTS</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('EXCLUDE CLIENTS')"
+    [ngClass]="{ selected: selectedItem === 'EXCLUDE CLIENTS' }"
+  >
+    <span class="circle">7</span>
+    <span class="item-text">EXCLUDE CLIENTS</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('CLIENTS LIMITS')"
+    [ngClass]="{ selected: selectedItem === 'CLIENTS LIMITS' }"
+  >
+    <span class="circle">8</span>
+    <span class="item-text">CLIENTS LIMITS</span>
+  </li>
+  <li
+    class="list-item"
+    (click)="selectItem('SUMMARY')"
+    [ngClass]="{ selected: selectedItem === 'SUMMARY' }"
+  >
+    <span class="circle">9</span>
+    <span class="item-text">SUMMARY</span>
+  </li>
+</ul>

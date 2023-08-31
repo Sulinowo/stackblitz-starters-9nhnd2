@@ -1,0 +1,30 @@
+{
+  "promotions": [
+    {
+      "marketingName": "MarketingName1",
+      "technicalName": "TechnicalName1",
+      "description": "",
+      "portal": "portal",
+      "type": "type2",
+      "startDate": "2023-08-08T22:00:00.000Z",
+      "finishDate": "2023-08-16T22:00:00.000Z",
+      "radioValue": "base",
+      "selectedBackPromotionCheckbox": true,
+      "selectedConnectPromotionCheckbox": false,
+      "id": 1693501311938
+    },
+    {
+      "id": 1693501344236,
+      "marketingName": "MarketingName2",
+      "technicalName": "TechnicalName3",
+      "description": "Desc1",
+      "portal": "portal",
+      "type": "type1",
+      "startDate": "2023-08-13T22:00:00.000Z",
+      "finishDate": "2023-08-27T22:00:00.000Z",
+      "radioValue": "base",
+      "selectedConnectPromotionsCheckbox": false,
+      "selectedBackPromotionCheckbox": false
+    }
+  ]
+}

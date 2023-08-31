@@ -1,0 +1,78 @@
+<div class="edit-form-container">
+  <h2>Edit Data</h2>
+  <form [formGroup]="editForm" class="edit-form">
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="marketingName"
+        placeholder="Marketing Name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        formControlName="technicalName"
+        placeholder="Technical Name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="description" placeholder="Description" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Portal</mat-label>
+      <mat-select formControlName="portal">
+        <mat-option *ngFor="let option of portalOptions" [value]="option">{{
+          option
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Type</mat-label>
+      <mat-select formControlName="type">
+        <mat-option *ngFor="let option of typeOptions" [value]="option">{{
+          option
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="startDatePicker"
+        formControlName="startDate"
+        placeholder="Start Date"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="startDatePicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #startDatePicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="finishDatePicker"
+        formControlName="finishDate"
+        placeholder="Finish Date"
+      />
+      <mat-datepicker-toggle
+        matSuffix
+        [for]="finishDatePicker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #finishDatePicker></mat-datepicker>
+    </mat-form-field>
+    <mat-radio-group formControlName="radioValue">
+      <mat-radio-button value="business">Business Conditions </mat-radio-button>
+      <mat-radio-button value="base">Base Price 100%</mat-radio-button>
+    </mat-radio-group>
+    <mat-checkbox formControlName="selectedBackPromotionCheckbox"
+      >Back Promotion Checkbox</mat-checkbox
+    >
+    <mat-checkbox formControlName="selectedConnectPromotionCheckbox"
+      >Connect Promotion Checkbox</mat-checkbox
+    >
+  </form>
+  <div class="edit-form-buttons">
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+  </div>
+</div>
