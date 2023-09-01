@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit {
   isNameFilled: boolean = false;
   selectedPortalOption: string | null = null;
   selectedTypeOption: string | null = null;
-  selectedStartDate: Date = new Date('');
-  selectedFinishDate: Date = new Date('');
+  selectedStartDate: Date = new Date();
+  selectedFinishDate: Date = new Date();
   selectedRadioValue: string | null = null;
   selectedConnectPromotionsCheckbox: boolean = false;
   selectedBackPromotionCheckbox: boolean = false;
