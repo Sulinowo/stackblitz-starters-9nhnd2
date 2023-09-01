@@ -25,6 +25,19 @@
       "selectedBackPromotionCheckbox": false,
       "selectedConnectPromotionCheckbox": null,
       "id": 1693501344236
+    },
+    {
+      "id": 1693558170263,
+      "marketingName": "asd",
+      "technicalName": "asd",
+      "description": "asd",
+      "portal": "option3",
+      "type": "type2",
+      "startDate": "2023-09-04T22:00:00.000Z",
+      "finishDate": "2023-08-16T22:00:00.000Z",
+      "radioValue": "business",
+      "selectedConnectPromotionsCheckbox": false,
+      "selectedBackPromotionCheckbox": false
     }
   ]
 }
