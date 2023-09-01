@@ -38,6 +38,19 @@
       "radioValue": "business",
       "selectedConnectPromotionsCheckbox": false,
       "selectedBackPromotionCheckbox": false
+    },
+    {
+      "id": 1693568388985,
+      "marketingName": "abc",
+      "technicalName": "",
+      "description": "",
+      "portal": "portal",
+      "type": "type2",
+      "startDate": "2023-09-18T22:00:00.000Z",
+      "finishDate": null,
+      "radioValue": null,
+      "selectedConnectPromotionsCheckbox": false,
+      "selectedBackPromotionCheckbox": false
     }
   ]
 }
